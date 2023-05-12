@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>2K NEWS-Telecom</title>
+        <link rel="stylesheet" type="text/css" href="telecom.css">
+        <script src="jquery-1.js"></script>
+        <script src="gestion-langue3.js"></script>
+    </head>
+    <body style="zoom: 65%;">
+        <script>
+            jQuery(document).ready(function()
+            {
+                jQuery('.contain-wait').css({'left':'0px'});
+            jQuery(window).load(function(){
+                jQuery('.contain-wait').css({'left':'3000px'});
+            });
+                var vallangue='fr';
+                var img = Base['imgB1a'],titre = Base['titreBox1a'+vallangue+''],contenu = Base['contenuB1a'+vallangue+''],date = Base['dateB1a'],par=Base['textB1a'+vallangue+''];
+                var img2 = Base['imgB1b'],titre2 = Base['titreBox1b'+vallangue+''],contenu2 = Base['contenuB1b'+vallangue+''],date2 = Base['dateB1b'],par2=Base['textB1b'+vallangue+''];
+                var img3 = Base['imgB3a'],titre3 = Base['titreBox3a'+vallangue+''],contenu3 = Base['contenuB3a'+vallangue+''],date3 = Base['dateB3a'],par3=Base['textB3a'+vallangue+''];
+                var img4 = Base['imgB3b'],titre4 = Base['titreBox3b'+vallangue+''],contenu4 = Base['contenuB3b'+vallangue+''],date4 = Base['dateB3b'],par4=Base['textB3b'+vallangue+''];
+                var img5 = Base['imgB3c'],titre5 = Base['titreBox3c'+vallangue+''],contenu5 = Base['contenuB3c'+vallangue+''],date5 = Base['dateB3c'],par5=Base['textB3c'+vallangue+''];
+                var img6 = Base['imgB1c'],titre6 = Base['titreBox1c'+vallangue+''],contenu6 = Base['contenuB1c'+vallangue+''],date6 = Base['dateB1c'],par6=Base['textB1c'+vallangue+''];
+                var img7 = Base['imgB2a'],titre7 = Base['titreBox2a'+vallangue+''],contenu7 = Base['contenuB2a'+vallangue+''],date7 = Base['dateB2a'],par7=Base['textB2a'+vallangue+''];
+                var img8 = Base['imgB1c'],titre8 = Base['titreBox1c'+vallangue+''],contenu8 = Base['contenuB1c'+vallangue+''],date8 = Base['dateB1c'],par8=Base['textB1c'+vallangue+''];
+               
+                //charge
+                jQuery('#img1').css({'background':""+img+""});jQuery('#titre1').html(titre);jQuery('#contenu1').html(contenu);jQuery('#date1').html(date);
+                jQuery('#img2').css({'background':""+img2+""});jQuery('#titre2').html(titre2);jQuery('#contenu2').html(contenu2);jQuery('#date2').html(date2);
+                jQuery('#img3').css({'background':""+img3+""});jQuery('#titre3').html(titre3);jQuery('#contenu3').html(contenu3);jQuery('#date3').html(date3);
+                jQuery('#img4').css({'background':""+img4+""});jQuery('#titre4').html(titre4);jQuery('#contenu4').html(contenu4);jQuery('#date4').html(date4);
+                jQuery('#img5').css({'background':""+img5+""});jQuery('#titre5').html(titre5);jQuery('#contenu5').html(contenu5);jQuery('#date5').html(date5);
+                jQuery('#img6').css({'background':""+img6+""});jQuery('#titre6').html(titre6);jQuery('#contenu6').html(contenu6);jQuery('#date6').html(date6);
+                jQuery('#img7').css({'background':""+img7+""});jQuery('#titre7').html(titre7);jQuery('#contenu7').html(contenu7);jQuery('#date7').html(date7);
+                jQuery('#img8').css({'background':""+img8+""});jQuery('#titre8').html(titre8);jQuery('#contenu8').html(contenu8);jQuery('#date8').html(date8);
+            
+                  //gestion langue
+              jQuery('.lang').on('click',function(){
+                  jQuery('.contain-lang').css({'left':'0px'})
+              })
+              jQuery('.contain-lang').on('click',function(){
+                  jQuery('.contain-lang').css({'left':'-3000px'})
+              })
+              jQuery('.ang').on('click',function()
+              {
+                jQuery('.ang').css({'background-color':'#E60B09',
+            'color':'white'})
+                jQuery('.fr').css({'background-color':'white',
+            'color':'black'})
+                  vallangue='ang'
+                  recharge();
+              })
+              jQuery('.fr').on('click',function()
+              {
+                jQuery('.fr').css({'background-color':'#E60B09',
+            'color':'white'})
+                jQuery('.ang').css({'background-color':'white',
+            'color':'black'})
+                  vallangue='fr'
+                  recharge();
+              })
+              function recharge()
+              {
+                var img = Base['imgB1a'],titre = Base['titreBox1a'+vallangue+''],contenu = Base['contenuB1a'+vallangue+''],date = Base['dateB1a'],par=Base['textB1a'+vallangue+''];
+                var img2 = Base['imgB1b'],titre2 = Base['titreBox1b'+vallangue+''],contenu2 = Base['contenuB1b'+vallangue+''],date2 = Base['dateB1b'],par2=Base['textB1b'+vallangue+''];
+                var img3 = Base['imgB3a'],titre3 = Base['titreBox3a'+vallangue+''],contenu3 = Base['contenuB3a'+vallangue+''],date3 = Base['dateB3a'],par3=Base['textB3a'+vallangue+''];
+                var img4 = Base['imgB3b'],titre4 = Base['titreBox3b'+vallangue+''],contenu4 = Base['contenuB3b'+vallangue+''],date4 = Base['dateB3b'],par4=Base['textB3b'+vallangue+''];
+                var img5 = Base['imgB3c'],titre5 = Base['titreBox3c'+vallangue+''],contenu5 = Base['contenuB3c'+vallangue+''],date5 = Base['dateB3c'],par5=Base['textB3c'+vallangue+''];
+                var img6 = Base['imgB1c'],titre6 = Base['titreBox1c'+vallangue+''],contenu6 = Base['contenuB1c'+vallangue+''],date6 = Base['dateB1c'],par6=Base['textB1c'+vallangue+''];
+                var img7 = Base['imgB2a'],titre7 = Base['titreBox2a'+vallangue+''],contenu7 = Base['contenuB2a'+vallangue+''],date7 = Base['dateB2a'],par7=Base['textB2a'+vallangue+''];
+                var img8 = Base['imgB1c'],titre8 = Base['titreBox1c'+vallangue+''],contenu8 = Base['contenuB1c'+vallangue+''],date8 = Base['dateB1c'],par8=Base['textB1c'+vallangue+''];
+               
+                //charge
+                jQuery('#img1').css({'background':""+img+""});jQuery('#titre1').html(titre);jQuery('#contenu1').html(contenu);jQuery('#date1').html(date);
+                jQuery('#img2').css({'background':""+img2+""});jQuery('#titre2').html(titre2);jQuery('#contenu2').html(contenu2);jQuery('#date2').html(date2);
+                jQuery('#img3').css({'background':""+img3+""});jQuery('#titre3').html(titre3);jQuery('#contenu3').html(contenu3);jQuery('#date3').html(date3);
+                jQuery('#img4').css({'background':""+img4+""});jQuery('#titre4').html(titre4);jQuery('#contenu4').html(contenu4);jQuery('#date4').html(date4);
+                jQuery('#img5').css({'background':""+img5+""});jQuery('#titre5').html(titre5);jQuery('#contenu5').html(contenu5);jQuery('#date5').html(date5);
+                jQuery('#img6').css({'background':""+img6+""});jQuery('#titre6').html(titre6);jQuery('#contenu6').html(contenu6);jQuery('#date6').html(date6);
+                jQuery('#img7').css({'background':""+img7+""});jQuery('#titre7').html(titre7);jQuery('#contenu7').html(contenu7);jQuery('#date7').html(date7);
+                jQuery('#img8').css({'background':""+img8+""});jQuery('#titre8').html(titre8);jQuery('#contenu8').html(contenu8);jQuery('#date8').html(date8);
+            
+            }
+            
+                //affichage du mode lecture
+            jQuery('#check1').on('click',function(){
+                    jQuery('.container-lecture').css({'left':'0px'})
+                    jQuery('.titre-text').html(Base['titreBox1a'+vallangue+''])
+                    jQuery('.text-text').html(Base['textB1a'+vallangue+''])
+                    jQuery('.img-box').css({"background":""+img+""})
+                })
+                jQuery('#check2').on('click',function(){
+                    jQuery('.container-lecture').css({'left':'0px'})
+                    jQuery('.titre-text').html(Base['titreBox1b'+vallangue+''])
+                    jQuery('.text-text').html(Base['textB1b'+vallangue+''])
+                    jQuery('.img-box').css({"background":""+img2+""})
+                })
+                jQuery('#check3').on('click',function(){
+                    jQuery('.container-lecture').css({'left':'0px'})
+                    jQuery('.titre-text').html(Base['titreBox3a'+vallangue+''])
+                    jQuery('.text-text').html(Base['textB3a'+vallangue+''])
+                    jQuery('.img-box').css({"background":""+img3+""})
+                })
+                jQuery('#check4').on('click',function(){
+                    jQuery('.container-lecture').css({'left':'0px'})
+                    jQuery('.titre-text').html(Base['titreBox3b'+vallangue+''])
+                    jQuery('.text-text').html(Base['textB3b'+vallangue+''])
+                    jQuery('.img-box').css({"background":""+img4+""})
+                })
+                jQuery('#check5').on('click',function(){
+                    jQuery('.container-lecture').css({'left':'0px'})
+                    jQuery('.titre-text').html(Base['titreBox3c'+vallangue+''])
+                    jQuery('.text-text').html(Base['textB3c'+vallangue+''])
+                    jQuery('.img-box').css({"background":""+img5+""})
+                })
+                jQuery('#check6').on('click',function(){
+                    jQuery('.container-lecture').css({'left':'0px'})
+                    jQuery('.titre-text').html(Base['titreBox1c'+vallangue+''])
+                    jQuery('.text-text').html(Base['textB1c'+vallangue+''])
+                    jQuery('.img-box').css({"background":""+img6+""})
+                })
+                jQuery('#check7').on('click',function(){
+                    jQuery('.container-lecture').css({'left':'0px'})
+                    jQuery('.titre-text').html(Base['titreBox3a'+vallangue+''])
+                    jQuery('.text-text').html(Base['textB3a'+vallangue+''])
+                    jQuery('.img-box').css({"background":""+img7+""})
+                })
+                jQuery('#check7').on('click',function(){
+                    jQuery('.container-lecture').css({'left':'0px'})
+                    jQuery('.titre-text').html(Base['titreBox1c'+vallangue+''])
+                    jQuery('.text-text').html(Base['textB1c'+vallangue+''])
+                    jQuery('.img-box').css({"background":""+img8+""})
+                })
+                //gestion barre de chargement
+
+                jQuery(window).scroll(function (event) {
+                  var sc = jQuery(window).scrollTop();
+                  var hauteur = jQuery('.block-page').height();
+                  var h=hauteur/2;
+                  var barre = (sc/h)*100;
+                  jQuery('.barre').css({'width':''+barre+'%'});
+                  if(sc>64){
+                    jQuery('.retour').css({'display':'flex'});
+                    jQuery('.send').css({'opacity':'0'});
+                    jQuery('.container2').animate({'top':'45px','width':'70%','margin-left':'12%'},'swing')
+                    jQuery('header').css({'height':'130px'})
+                    jQuery('header').css({'background-color':'rgba(245, 231, 170, 0.8)'})
+                    jQuery('.logo').css({'display':'none'},'swing');
+                    jQuery('#sous').css({'display':'none'},'swing')
+                    jQuery('#titre').html("2K NEWS<mark>.</mark>")
+                    jQuery('#titre').css({'font-size':'40px'})
+                    jQuery('.autre').animate({'margin-top':'-10px'},'swing')
+                  }
+                  if(sc<64){
+                    jQuery('.retour').css({'display':'none'});
+                    jQuery('.send').css({'opacity':'1'});
+                    jQuery('.container2').animate({'top':'170px','width':'100%','margin-left':'0%'},'fast')
+                    jQuery('header').css({'height':'250px'})
+                    jQuery('header').css({'background-color':'rgba(245, 231, 170, 0.8)'})
+                    jQuery('.logo').css({'display':' inline-flex'});
+                    jQuery('#sous').css({'display':'block'})
+                    jQuery('#titre').html("2K")
+                    jQuery('#titre').css({'font-size':'80px'})
+                    jQuery('.autre').animate({'margin-top':'0px'},'fast')
+                  }
+                  if(sc<2000){
+                    jQuery('.bulle').css({'display':'none'});
+                  }
+                  if(sc>2000){
+                    jQuery('.bulle').css({'display':'block'});
+                    jQuery('.bulle').animate({'left':'20px'},'slow');
+                  }
+               });
+               jQuery('.retour').on('click',function(){
+                jQuery(window).scrollTop(0);
+               });
+               //traitement de l'addresse email
+               var email=jQuery('.input').val();
+               jQuery('.input').on('click',function(){
+                   jQuery('.input').css({'font-size':'25px'});
+                   if(email == "Entrez votre addresse email et recevez toutes nos infos")
+                   {
+                    jQuery('.input').val("");
+                   }
+                   if(email == "Votre addresse email est incorrecte")
+                   {
+                    jQuery('.input').val("");
+                   }
+               })
+               jQuery('.input').mouseenter(function(){
+                   jQuery('.input').css({'font-size':'25px'});
+               })
+               jQuery('.input').mouseleave(function(){
+                   jQuery('.input').css({'font-size':'20px'});
+               })
+              if(email.length == 0)
+              {
+                      jQuery('.input').val("Votre addresse email est incorrecte");
+                      jQuery('.input').css({'color':'red'});
+              }else
+              {
+                 jQuery('.button-send , .button-send2').on('click',function(){
+                    email=jQuery('.input').val();
+                    email=email.substring(email.indexOf("@"),email.indexOf(".com"));
+                    if(email.indexOf("@"))
+                  {
+                      jQuery('.input').val("Votre addresse email est incorrecte");
+                      jQuery('.input').css({'color':'red'});
+                      email=jQuery('.input').val();
+                  }else{
+                      jQuery('.input').css({'color':'black'});
+                  }
+                 })
+              }
+             //plus d'info
+             contain='Voir plus'
+              jQuery('.voir-plus').on('click',function()
+              {
+                  if(contain =='Voir plus')
+                  {
+                    contain='Attendez les prochaines actuallités'
+                    jQuery('.voir-plus').text(contain)
+                    jQuery('.voir-plus').css({'top':'375%'})
+                    jQuery('.container-page').css({'height':'4200px'})
+                   jQuery('.block-page').css({'height':'4200px'})
+                  }
+              })
+            });
+        </script>
+        <div class="block-page">
+            <div class="chargement">
+                <div class="barre"></div>
+            </div>
+            <div class="retour"></div>
+            <div class="bulle">
+                <center>
+                    <p class="presentation3" style="margin-top: 30px;">Inscivez vous et recevez toute l'actualité</p>
+                    <div style="width: 90%;height: 70px;border-radius: 20px;background-color: white;">
+                        <input type="email" value="Entrez votre addresse email et recevez toutes nos infos" class="input2" style="display: block;margin-left: 1%;font-size: 17px;color: black;border: none;width: 72%; height: 65px;">
+                        <button class="button-send2">Sign up</button>
+                    </div>
+                </center>
+            </div>
+            <div class="recherche">
+                <div class="rond" id="c1"></div>
+                <div class="rond" id="c2"></div>
+                <div class="rond" id="c3"></div>
+                <div class="rond" id="c4"></div>
+             </div>
+          
+          
+          <button class="voir-plus">Attendez les nouvelles actualités</button>
+            <header>
+                <div style="width: 100%;height: 20px;"></div>
+                <div class="container1">
+                    <div class="logo">
+                        <div class="img-log">
+                            <img src="images/logo.png" width="140" height="140">
+                        </div>
+                    </div>
+                    <div class="titre">
+                        <div style="width: 100%;height: 80px;">
+                            <div style="width: 100%;height: 10px;"></div>
+                            <i id="titre" style="margin-left: 10px; font-weight: bold; font-size: 80px;color: black;word-wrap: break-word;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                2K
+                             </i>
+                        </div>
+                        <div id="sous" style="width: 100%;height: 60px;">
+                            <i style="margin-left: 10px; font-weight: bold; font-size: 50px;color: black;word-wrap: break-word;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                NEWS<mark>.</mark>
+                             </i>
+                        </div>
+                    </div>
+                    <div class="autre">
+                        <div class="send">
+                            <input type="email" class="input" value="Entrez votre addresse email et recevez toutes nos infos">
+                            <button class="button-send">Sign up</button>
+                        </div>
+                        <button class="Apropos">A propos</button>
+                        <button class="lang">fr </button>
+                    </div>
+                </div>
+                <div class="container2">
+                    <nav>
+                        <center>
+                            <div class="select">
+                                <a href="index.html">
+                                    <button class="news">News</button>
+                                </a>
+                                <div class="cussor"></div>
+                            </div>
+                            <button class="act">Actualité sur :</button>
+                            <div class="select">
+                                <a href="ia.html">
+                                    <button class="news">IA</button>
+                                </a>
+                                
+                                <div class="cussor1"></div>
+                            </div>
+                            <div class="select2">
+                                <a href="robotique.html">
+                                    <button class="robo">Robotique</button>
+                                </a>
+                                <div class="cussor"></div>
+                            </div>
+                            <div class="select1">
+                                <a href="cloud.html">
+                                    <button class="cloud">Cloud-computing</button>
+                                </a>
+                                
+                                
+                            </div>
+                            <div class="select1">
+                                <a href="cyber-securire.html">
+                                    <button class="cyber">Cyber-securité</button>
+                                </a>
+                                
+                                <div class="cussor4"></div>
+                            </div>
+                            <div class="select1">
+                                <a href="realite-virtuelle.html">
+                                      <button class="rv">Réalité virtuelle</button>
+                                </a>
+                              
+                                
+                            </div>
+                            <div class="select">
+                                <a href="telecom.html">
+                                    <button class="tel">Telecom</button>
+                                </a>
+                               <div class="cussor2"></div>
+                            </div>
+                    </center>
+                    </nav>
+                </div>
+            </header>
+            <div class="container-page">
+                <div style="width: 100%;height: 260px;"></div>
+                
+             <div class="contain-box">
+                <div class="box1">
+                    <div id="img1" class="sous-box1">
+                        <p class="type1">Un robot araignée</p>
+               
+                        <center>
+                            <p id="date1" class="date">publier</p>
+                        </center>
+                    </div>
+                    <div class="sous-box2">
+                        <p id="titre1"  class="text-bull-titre"></p>
+                        <p id="contenu1" class="text-bull"></p>
+                    </div>
+                    <button id="check1" class="plus">Cliquez ici pour en savoir plus</button>
+                    
+                </div>
+                <div class="box2">
+                    <div id="img2" class="sous-box1">
+                        <div id="img1" class="sous-box1">
+                            <p class="type1">New</p>
+                            <p class="type2">Intelligence artificielle</p>
+                            
+                            <center>
+                                <p id="date2" class="date">publier</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="sous-box2">
+                        <p id="titre2"  class="text-bull-titre"></p>
+                        <p id="contenu2" class="text-bull"></p>
+                    
+                    </div>
+                    <button id="check2" class="plus">Cliquez ici pour en savoir plus</button>
+        
+                </div>
+                <div class="box3">
+                    <div id="img3" class="sous-box1">
+                        <div id="img1" class="sous-box1">
+                           
+                            <p class="type2">Réalité virtuelle</p>
+                            
+                            <center>
+                                <p id="date3" class="date">publier</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="sous-box2">
+                        <p id="titre3" class="text-bull-titre"></p>
+                        <p id="contenu3" class="text-bull"></p>
+                    
+                    </div>
+                    <button id="check3" class="plus">Cliquez ici pour en savoir plus</button>
+                    
+                </div>
+                <div class="box4">
+                    <div id="img4" class="sous-box1">
+                        <p class="type1">Un robot verre de terre</p>
+    
+                        <center>
+                            <p id="date4" class="date">publier</p>
+                        </center>
+                    </div>
+                    <div class="sous-box2">
+                        <p id="titre4" class="text-bull-titre"></p>
+                        <p id="contenu4" class="text-bull"></p>
+                    </div>
+                    <button id="check4" class="plus">Cliquez ici pour en savoir plus</button>
+                    
+                </div>
+                <div class="box5">
+                    <div id="img5" class="sous-box1">
+                        <p class="type1">Innovation 2023</p>
+                        <center>
+                            <p id="date5" class="date">publier</p>
+                        </center>
+                    </div>
+                    <div class="sous-box2">
+                        <p id="titre5" class="text-bull-titre"></p>
+                        <p id="contenu5" class="text-bull"></p>
+                    </div>
+                    <button id="check5" class="plus">Cliquez ici pour en savoir plus</button>
+                    
+                </div>
+                <div class="box6">
+                    <div id="img6" class="sous-box1">
+                        
+                        <p class="type1">Telecom</p>
+                        
+                        <center>
+                            <p id="date6" class="date">publier</p>
+                        </center>
+                    </div>
+                    <div class="sous-box2">
+                        <p id="titre6" class="text-bull-titre"></p>
+                        <p id="contenu6" class="text-bull"></p>
+                    </div>
+                    <button id="check6" class="plus">Cliquez ici pour en savoir plus</button>
+                    
+                </div>
+                <div class="box7">
+                    <div id="img7" class="sous-box1">
+                       
+                        <p class="type1">5G au cameroun</p>
+                        
+                        <center>
+                            <p id="date7" class="date">publier</p>
+                        </center>
+                    </div>
+                    <div class="sous-box2">
+                        <p id="titre7" class="text-bull-titre"></p>
+                        <p id="contenu7" class="text-bull"></p>
+                    </div>
+                    <button id="check7" class="plus">Cliquez ici pour en savoir plus</button>
+                    
+                </div>
+                <div class="box8">
+                    <div id="img8" class="sous-box1">
+                        
+                        <p class="type1">ESIM</p>
+                        <center>
+                            <p id="date8" class="date">publier</p>
+                        </center>
+                    </div>
+                    <div class="sous-box2">
+                        <p id="titre8" class="text-bull-titre"></p>
+                        <p id="contenu8" class="text-bull"></p>
+                    </div>
+                    <button id="check8" class="plus">Cliquez ici pour en savoir plus</button>
+                    
+                </div>
+                <div class="box9">
+                    <div id="img8" class="sous-box1">
+                       
+                        <p class="type1">ESIM</p>
+                        <center>
+                            <p id="date8" class="date">publier</p>
+                        </center>
+                    </div>
+                    <div class="sous-box2">
+                        <p id="titre8" class="text-bull-titre"></p>
+                        <p id="contenu8" class="text-bull"></p>
+                    </div>
+                    <button id="check8" class="plus">Cliquez ici pour en savoir plus</button>
+                    
+                </div>
+               
+               
+                
+             </div>
+                
+            </div>
+        </div>
+        <footer>
+            <div class="source">
+                <center>
+                    <div style="width: 100%;height: 20px;"></div>
+                    <p class="text-foot2" style="margin-top:0px;">
+                        Nos sources d'informations
+                    </p> 
+                    <div style="width: 80%;height: 300px;">
+                        <a href="#">
+                            <p style="transform: rotate(90deg);margin-top:100px;margin-left: -900px; cursor: pointer; color: rgb(52, 72, 255);font-size: 60px;display: inline-block;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                Futura science
+                            </p>
+                        </a>
+                        <a href="#">
+                            <p style="margin-top:-250px;margin-left: -800px; cursor: pointer; color: rgb(245, 0, 0);font-size: 40px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                Rfi
+                            </p>
+                        </a>
+                        <a href="#">
+                            <p style="margin-top:-90px;margin-left: -400px; cursor: pointer; color: rgb(255, 115, 0);font-size: 45px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                Orange-Cameroun
+                            </p>
+                        </a>
+                        <a href="#">
+                            <p style="margin-top:-100px;margin-left: 250px; cursor: pointer; color: rgb(255, 55, 20);font-size: 45px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                Science A Venir
+                            </p>
+                        </a>
+                        <a href="#">
+                            <p style="margin-top:-95px;margin-left: 650px; cursor: pointer; color: rgb(0, 109, 119);font-size: 40px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                Tech24
+                            </p>
+                        </a>
+                        <a href="#">
+                            <p style="transform: rotate(90deg);margin-top:110px;margin-left: -800px; cursor: pointer; color: rgb(4, 133, 90);font-size: 60px;display: inline-block;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                Jeux Video.com
+                            </p>
+                        </a>
+                        <a href="#">
+                            <p style="margin-top:-270px;margin-left: -580px; cursor: pointer; color: rgb(4, 90, 204);font-size: 40px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                Playstation
+                            </p>
+                        </a>
+                    </div>
+                </center>
+            </div>
+            <center>
+                <p class="text-foot">
+                    Retrouvez nous sur les reseaux sociaux
+                </p>
+                <div class="social">
+                    <img id="face" class="img-logo" src="icone-face.png">
+                    <img id="insta" class="img-logo" src="icone-insta.png">
+                    <img id="twit" class="img-logo" src="icone-twitter.png">
+                    <img id="you" class="img-logo" src="youtube-icone.png">
+                </div>
+            </center>
+        </footer>
+        <script>
+            jQuery(document).ready(function(){
+                jQuery('.close').on('click',function(){
+                    jQuery('.container-lecture').css({'left':'-3000px'})
+                })
+                jQuery('#t15').on('click',function(){
+                        jQuery('.text-text').css({'font-size':'15px'})
+                    })
+                jQuery('#t20').on('click',function(){
+                        jQuery('.text-text').css({'font-size':'20px'})
+                    })
+                jQuery('#t25').on('click',function(){
+                        jQuery('.text-text').css({'font-size':'25px'})
+                    })
+                jQuery('#t30').on('click',function(){
+                        jQuery('.text-text').css({'font-size':'30px'})
+                    })
+                jQuery('#t40').on('click',function(){
+                        jQuery('.text-text').css({'font-size':'40px'})
+                    })
+            });
+        </script>
+        <div class="container-lecture">
+            <div class="fenetre">
+                
+                    <p class="type1">Mode lecture</p>
+                    <button class="close">fermer</button>
+                
+                <center>
+                    <div style="display: flex;justify-content: center;align-items: center; width:70%;height: 70px;background-color: rgba(255, 255, 255, 0.15);border-radius: 20px;box-shadow: 0px 10px 70px rgba(248, 155, 41, 0.3);backdrop-filter: blur(25px);">
+                        <p class="type1">Taille de texte</p>
+                        <p id="t15" class="type1">Taille 15</p>
+                        <p id="t20" class="type1">Taille 20</p>
+                        <p id="t25" class="type1">Taille 25</p>
+                        <p id="t30" class="type1">Taille 30</p>
+                        <p id="t40" class="type1">Taille 40</p>
+                    </div>
+                </center>
+                <div class="contain-text">
+                    <p class="titre-text">Titre</p>
+                    <div class="img-box"></div>
+                    <div style="width: 95%;height: auto;">
+                        <p class="text-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, consequatur perspiciatis aperiam quibusdam nihil porro! Quam ipsa repellat deleniti accusantium aut corporis eligendi magni. Debitis esse nihil fuga tempore facere.</p>
+                    </div>
+                    <center>
+                        <p style="font-size: 18px;color: black;word-wrap: break-word;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            Retrouvez cet actualité sur nos pages
+                        </p>
+                        <div class="social">
+                            <img id="face" class="img-logo" src="icone-face.png">
+                            <img id="insta" class="img-logo" src="icone-insta.png">
+                            <img id="twit" class="img-logo" src="icone-twitter.png">
+                            <img id="you" class="img-logo" src="youtube-icone.png">
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="contain-lang">
+            <div class="box-select">
+                <center>
+                    <p class="type1">
+                        Selectioner la langue
+                    </p>
+                    <div class="box-option">
+                        <button class="fr">Français</button>
+                        <button class="ang">Anglais</button>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div class="contain-wait">
+            <div class="container-wait">
+                <div class="logo">
+                    <div class="img-log">
+                        <img src="images/logo.png" width="140" height="140">
+                    </div>
+                </div>
+                <div class="titre">
+                    <div style="width: 100%;height: 80px;">
+                        <div style="width: 100%;height: 10px;"></div>
+                        <i style="margin-left: 10px; font-weight: bold; font-size: 80px;color: black;word-wrap: break-word;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            2K
+                         </i>
+                    </div>
+                    <div style="width: 100%;height: 60px;">
+                        <i style="margin-left: 10px; font-weight: bold; font-size: 50px;color: black;word-wrap: break-word;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            NEWS<mark>.</mark>
+                         </i>
+                    </div>
+                </div><br>
+                <center>
+                   <p class="type2">
+                    Chargement de la page
+                  </p> 
+                </center>
+                
+        </div>
+    </body>
+</html>
